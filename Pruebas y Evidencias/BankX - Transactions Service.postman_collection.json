@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "ee48e379-d74b-4159-b292-431f4ffb254b",
+		"name": "BankX - Transactions Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9954622"
+	},
+	"item": [
+		{
+			"name": "Crear Transacción (OK)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": \"001-0001\",\r\n    \"type\": \"DEBIT\",\r\n    \"amount\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
