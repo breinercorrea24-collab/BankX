@@ -1,13 +1,16 @@
-package bca.bankX;
+package bca.bankx;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * Main application class for BankX.
+ */
 @SpringBootApplication
-public class BankXApplication {
+class BankxApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(BankXApplication.class, args);
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(BankxApplication.class, args);
+  }
 
 }

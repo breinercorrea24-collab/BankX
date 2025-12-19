@@ -1,4 +1,4 @@
-package bca.bankX.infraestructura.in.rest.filter;
+package bca.bankx.infraestructura.in.rest.filter;
 
 import java.util.UUID;
 
@@ -12,7 +12,7 @@ import org.springframework.mock.http.server.reactive.MockServerHttpRequest;
 import org.springframework.mock.web.server.MockServerWebExchange;
 import org.springframework.web.server.WebFilterChain;
 
-import bca.bankX.infrastructure.adapter.in.rest.filters.CorrelationFilter;
+import bca.bankx.infrastructure.adapter.in.rest.filters.CorrelationFilter;
 import reactor.core.publisher.Mono;
 
 @ExtendWith(MockitoExtension.class)

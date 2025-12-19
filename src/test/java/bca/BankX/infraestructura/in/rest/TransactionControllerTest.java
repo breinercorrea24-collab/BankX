@@ -1,4 +1,4 @@
-package bca.bankX.infraestructura.in.rest;
+package bca.bankx.infraestructura.in.rest;
 
 import java.math.BigDecimal;
 
@@ -11,8 +11,8 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.reactive.server.WebTestClient;
 
-import bca.bankX.application.service.RiskRemoteClient;
-import bca.bankX.infrastructure.adapter.in.rest.request.CreateTxRequest;
+import bca.bankx.application.service.RiskRemoteClient;
+import bca.bankx.infrastructure.adapter.in.rest.request.CreateTxRequest;
 import reactor.core.publisher.Mono;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)

@@ -1,4 +1,4 @@
-package bca.bankX.application.service;
+package bca.bankx.application.service;
 
 import java.math.BigDecimal;
 
@@ -9,10 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
-import bca.bankX.application.service.RiskRemoteClient;
-import bca.bankX.application.service.TransactionService;
-import bca.bankX.domain.exception.BusinessException;
-import bca.bankX.infrastructure.adapter.in.rest.request.CreateTxRequest;
+import bca.bankx.application.service.RiskRemoteClient;
+import bca.bankx.application.service.TransactionService;
+import bca.bankx.domain.exception.BusinessException;
+import bca.bankx.infrastructure.adapter.in.rest.request.CreateTxRequest;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 

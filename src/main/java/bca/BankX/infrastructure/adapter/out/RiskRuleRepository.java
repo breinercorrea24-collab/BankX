@@ -1,11 +1,12 @@
-package bca.bankX.infrastructure.adapter.out;
+package bca.bankx.infrastructure.adapter.out;
 
+import bca.bankx.domain.model.RiskRule;
 import java.util.Optional;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import bca.bankX.domain.model.RiskRule;
-
+/**
+ * Repository for RiskRule entities.
+ */
 public interface RiskRuleRepository extends JpaRepository<RiskRule, Long> {
-    Optional<RiskRule> findFirstByCurrency(String currency);
+  Optional<RiskRule> findFirstByCurrency(String currency);
 }

@@ -1,9 +1,9 @@
 spring:
   application:
-    name: BankX
+    name: bankX
 
   mongodb:
-    uri: mongodb://localhost:27017/bankx
+    uri: mongodb://localhost:27017/bankX
 
   jpa:
     hibernate:

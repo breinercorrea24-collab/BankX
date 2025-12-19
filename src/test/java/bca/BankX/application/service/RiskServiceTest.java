@@ -1,4 +1,4 @@
-package bca.bankX.application.service;
+package bca.bankx.application.service;
 
 import java.math.BigDecimal;
 
@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import bca.bankx.application.service.RiskService;
 import reactor.test.StepVerifier;
 
 @SpringBootTest

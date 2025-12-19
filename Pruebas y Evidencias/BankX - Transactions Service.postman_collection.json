@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "ee48e379-d74b-4159-b292-431f4ffb254b",
-		"name": "BankX - Transactions Service",
+		"name": "bankX - Transactions Service",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "9954622"
 	},

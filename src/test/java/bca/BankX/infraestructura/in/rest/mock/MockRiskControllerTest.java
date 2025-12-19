@@ -1,4 +1,4 @@
-package bca.bankX.infraestructura.in.rest.mock;
+package bca.bankx.infraestructura.in.rest.mock;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

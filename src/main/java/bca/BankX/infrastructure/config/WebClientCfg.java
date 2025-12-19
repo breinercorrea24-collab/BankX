@@ -1,4 +1,4 @@
-package bca.bankX.infrastructure.config;
+package bca.bankx.infrastructure.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -6,8 +6,8 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
 class WebClientCfg {
-    @Bean
-    WebClient riskWebClient() {
-        return WebClient.builder().baseUrl("http://localhost:8084/mock/risk").build();
-    }
+  @Bean
+  WebClient riskWebClient() {
+    return WebClient.builder().baseUrl("http://localhost:8084/mock/risk").build();
+  }
 }

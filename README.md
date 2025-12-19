@@ -34,3 +34,27 @@ mvn clean test
 mvn checkstyle:check
 
 se genera : target/checkstyle-result.xml
+
+## Sonar
+
+bankx-transactions
+sqp_d4968a55ed20ce4e057be36401148099c984d4fb
+
+
+mvn -DskipTests=false \
+ -Dsonar.projectKey=bankx-transactions \
+ -Dsonar.projectName="BankX Transactions Service" \
+ -Dsonar.host.url=http://localhost:9000 \
+ -Dsonar.login=sqp_d4968a55ed20ce4e057be36401148099c984d4fb \
+ -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml \ 
+
+
+ mvn -DskipTests=false -Dsonar.projectKey=bankx-transactions -Dsonar.projectName="BankX Transactions Service" -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqp_d4968a55ed20ce4e057be36401148099c984d4fb -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml 
+
+
+mvn clean verify sonar:sonar ^
+ -Dsonar.projectKey=bankx-transactions ^
+ -Dsonar.projectName="BankX Transactions Service" ^
+ -Dsonar.host.url=http://localhost:9000 ^
+ -Dsonar.login=sqp_d4968a55ed20ce4e057be36401148099c984d4fb ^
+ -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml

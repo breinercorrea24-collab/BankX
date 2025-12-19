@@ -1,6 +1,8 @@
-package bca.bankX.domain.exception;
+package bca.bankx.domain.exception;
 
 import org.junit.jupiter.api.Test;
+
+import bca.bankx.domain.exception.BusinessException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
