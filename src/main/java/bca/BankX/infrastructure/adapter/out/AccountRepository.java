@@ -1,8 +1,8 @@
-package bca.BankX.infrastructure.adapter.out;
+package bca.bankX.infrastructure.adapter.out;
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 
-import bca.BankX.domain.model.Account;
+import bca.bankX.domain.model.Account;
 import reactor.core.publisher.Mono;
 
 public interface AccountRepository extends ReactiveMongoRepository<Account, String> {

@@ -1,10 +1,13 @@
-package bca.BankX.infrastructure.adapter.in.rest;
+package bca.bankX.infrastructure.adapter.in.rest;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RestController;
 
-import bca.BankX.application.service.TransactionService;
-import bca.BankX.domain.model.Transaction;
-import bca.BankX.infrastructure.adapter.in.rest.request.CreateTxRequest;
+import bca.bankX.infrastructure.adapter.in.rest.request.CreateTxRequest;
+import bca.bankX.application.service.TransactionService;
+import bca.bankX.domain.model.Transaction;
+import bca.bankX.infrastructure.logging.LogContext;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Flux;
@@ -25,10 +28,28 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequiredArgsConstructor
 public class TransactionController {
     private final TransactionService service;
+    private final LogContext logContext;
+    private static final Logger log = LoggerFactory.getLogger(TransactionController.class);
 
     @PostMapping("/transactions")
     public Mono<ResponseEntity<Transaction>> create(@Valid @RequestBody CreateTxRequest req) {
-        return service.create(req).map(t -> ResponseEntity.status(HttpStatus.CREATED).body(t));
+        log.debug("Creating tx {}", req);
+        System.out.println("Creating tx " + req);
+
+        return logContext.withMdc(
+            service.create(req)
+                .map(tx ->
+                    ResponseEntity
+                        .status(HttpStatus.CREATED)
+                        .body(tx)
+                )
+        ).doOnSuccess(response -> {
+            System.out.println("Tx created: " + response.getBody());
+            log.info("tx_created account={} amount={}",
+                req.getAccountNumber(),
+                req.getAmount());
+        });
+        // return service.create(req).map(t -> ResponseEntity.status(HttpStatus.CREATED).body(t));
     }
 
     @GetMapping("/transactions")

@@ -1,4 +1,4 @@
-package bca.BankX.domain.model;
+package bca.bankX.domain.model;
 
 import java.math.BigDecimal;
 import java.time.Instant;

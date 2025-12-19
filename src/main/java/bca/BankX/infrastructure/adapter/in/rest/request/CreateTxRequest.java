@@ -1,4 +1,4 @@
-package bca.BankX.infrastructure.adapter.in.rest.request;
+package bca.bankX.infrastructure.adapter.in.rest.request;
 
 import java.math.BigDecimal;
 

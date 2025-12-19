@@ -1,14 +1,14 @@
-package bca.BankX.application.service;
+package bca.bankX.infrastructure.config;
 
 import java.math.BigDecimal;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import bca.BankX.infrastructure.adapter.out.AccountRepository;
-import bca.BankX.infrastructure.adapter.out.RiskRuleRepository;
-import bca.BankX.domain.model.Account;
-import bca.BankX.domain.model.RiskRule;
+import bca.bankX.domain.model.Account;
+import bca.bankX.domain.model.RiskRule;
+import bca.bankX.infrastructure.adapter.out.AccountRepository;
+import bca.bankX.infrastructure.adapter.out.RiskRuleRepository;.out.RiskRuleRepository;
 import reactor.core.publisher.Flux;
 
 @Component

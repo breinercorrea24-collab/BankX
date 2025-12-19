@@ -1,11 +1,11 @@
-package bca.BankX.application.service;
+package bca.bankX.application.service;
 
 import java.math.BigDecimal;
 
 import org.springframework.stereotype.Service;
 
-import bca.BankX.domain.model.RiskRule;
-import bca.BankX.infrastructure.adapter.out.RiskRuleRepository;
+import bca.bankX.domain.model.RiskRule;
+import bca.bankX.infrastructure.adapter.out.RiskRuleRepository;
 import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;

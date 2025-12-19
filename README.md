@@ -24,3 +24,13 @@ Dentro de esta carpeta se agregaron los siguientes elementos:
 
 📌 **Nota:**  
 Las pruebas realizadas permiten verificar que la aplicación cumple con los requerimientos funcionales definidos en la guía del laboratorio.
+
+## Test
+
+mvn clean test 
+
+## CheckStyle
+
+mvn checkstyle:check
+
+se genera : target/checkstyle-result.xml

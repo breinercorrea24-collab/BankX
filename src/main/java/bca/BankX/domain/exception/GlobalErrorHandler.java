@@ -1,4 +1,4 @@
-package bca.BankX.domain.exception;
+package bca.bankX.domain.exception;
 
 import java.util.Map;
 

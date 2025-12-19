@@ -1,4 +1,4 @@
-package bca.BankX;
+package bca.bankX;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

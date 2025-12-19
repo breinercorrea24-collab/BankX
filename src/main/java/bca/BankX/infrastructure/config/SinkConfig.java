@@ -1,9 +1,9 @@
-package bca.BankX.infrastructure.config;
+package bca.bankX.infrastructure.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import bca.BankX.domain.model.Transaction;
+import bca.bankX.domain.model.Transaction;
 import reactor.core.publisher.Sinks;
 
 @Configuration

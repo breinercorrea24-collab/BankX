@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <!-- Reduce ruido de frameworks -->
+        <Logger name="org.springframework" level="INFO"/>
+        <Logger name="org.hibernate" level="WARN"/>
+        <Logger name="org.mongodb.driver" level="WARN"/>
+        <!-- Tu código en DEBUG para demo -->
+        <Logger name="com.bankx" level="DEBUG"/>
+        <Root level="INFO">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+</Configuration> 
